@@ -1,0 +1,132 @@
+.Buscando_Container{
+padding: 60px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.Buscando_Container .v_squares{
+display: flex;
+text-transform: uppercase;
+color: white;
+cursor: pointer;
+width: 100%;
+}
+
+.Buscando_Container .v_squares > div:hover .shadow {
+    opacity: 0.8;
+    transition: opacity 0.2s
+    
+
+}
+
+
+.Buscando_Container .v_squares > div:hover p {
+    bottom: 25%;
+   transition: bottom 0.28s;
+}
+
+.Buscando_Container .v_squares .shadow{
+    width: 100%;
+    min-height: 296px;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.781));
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+
+
+
+}
+
+.Buscando_Container .v_squares > div{
+width: 25%;
+min-height: 592px;
+background: #eba5a5;
+position: relative;
+overflow: hidden;
+}
+
+.Buscando_Container .v_squares > .par{
+    background:#e78f8f
+}
+.Buscando_Container .v_squares > div img{
+width: 285px;
+position: absolute;
+top: 68%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 0;
+
+}
+
+.Buscando_Container .v_squares > div p{
+    font-size: 1.875em;
+    letter-spacing: 6.5px;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(270deg);
+    width: 284px;
+    transition: bottom 0.28s;
+}
+
+.Buscando_Container > .static{
+    width: 100%;
+    margin: 60px 0 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Buscando_Container > .static > img{
+width: 60%;
+cursor: pointer;
+}
+
+.Buscando_Container > .static > .vertical{
+width: 30%;
+margin-left: 5%;
+}
+
+@media(max-width:900px){
+    .Buscando_Container > .static > .vertical{
+    display: none;
+    }
+
+    .Buscando_Container > .static > img{
+        width: 100%;
+        }
+}
+
+
+@media(max-width:788px){
+    .Buscando_Container .v_squares{
+        flex-direction: column;
+        }
+
+    .Buscando_Container .v_squares > div {
+        width: 100%;
+        min-height: 148px;     
+    }
+    .Buscando_Container .v_squares > div img {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%) rotate(90deg);
+    }
+
+    .Buscando_Container .v_squares > div p  {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+    width: auto;
+}
+    
+
+    .Buscando_Container .v_squares .shadow {
+    min-height: 148px;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.681));  
+    }
+}
+

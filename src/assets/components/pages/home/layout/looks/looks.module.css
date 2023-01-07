@@ -1,0 +1,108 @@
+.Looks_Container{
+padding: 60px 0;
+position: relative;
+}
+
+.Looks_Container > .carrosel {
+display: flex;
+overflow: auto;
+scroll-behavior: smooth;
+}
+
+.Looks_Container > .carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.Looks_Container > .carrosel div {
+    width:25%;
+}
+
+.Looks_Container .arrow{
+position: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 29px;
+cursor: pointer;
+}
+
+.Looks_Container .arrowLeft{
+    left: -7%;
+    transform: rotate(90deg);
+}
+
+.Looks_Container .arrowRight{
+    right: -7%;
+    transform: rotate(270deg);
+}
+
+.Looks_Container > button{
+margin: 0 auto;
+margin-top: 3%;
+}
+
+
+
+@media(max-width:1304px){
+    .Looks_Container .arrowLeft{
+        left: 40%;
+    }
+    
+    .Looks_Container .arrowRight{
+        right: 40%;
+    }
+
+    .Looks_Container .arrow{
+        top: 79%;  
+        width: 37px;
+        }
+
+        .Looks_Container > button{
+            margin: 0 auto;
+            margin-top: 22%;
+            }
+            
+}
+
+
+@media(max-width:894px){
+    .Looks_Container > .carrosel div{
+    width:33.33333333333333%;
+    }
+}
+@media(max-width:708px){
+    .Looks_Container .arrowRight{
+    right: 30%;
+    }
+    .Looks_Container .arrowLeft{
+        left: 30%;
+        }
+}
+
+@media(max-width:622px){
+    .Looks_Container > .carrosel div{
+    width:50%;
+    }
+}
+
+@media(max-width:413px){
+    .Looks_Container > .carrosel div{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .Looks_Container > .carrosel div > img{
+        max-width:265px;
+
+        }
+}
+
+
+
+
+@media(min-width:1305px){
+    .Looks_Container > .carrosel {
+        min-height: 640.55px;
+        }
+}

@@ -1,0 +1,74 @@
+.Lojas_Container{
+padding: 60px 0 35px 0;
+}
+
+.Lojas_Container > div {
+position: relative;
+width: 100%;
+min-height: 555px;
+z-index: -0;
+overflow: hidden;
+}
+
+.Lojas_Container > div .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 482px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.801);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 10px 10px 10px;
+}
+
+.Lojas_Container > div .content > button{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.Lojas_Container > div .content > button > div {
+    border-left: 2px solid white;
+}
+
+.Lojas_Container > div .content > button img{
+    filter: invert(95%) sepia(0%) saturate(18%) hue-rotate(328deg) brightness(104%) contrast(107%);
+}
+
+.Lojas_Container > div > .shadow{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgb(0, 0, 0));
+    width: 100%;
+    height: 318px;
+    position: absolute;
+    top: 71.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+
+}
+
+.Lojas_Container{
+color: white;
+}
+
+.Lojas_Container h6{
+font-size: 3em;
+font-weight: 500;
+}
+
+.Lojas_Container .content > p {
+    font-family: var(--font2);
+    margin-bottom: 22px;
+    width: 69%;
+}
+
+@media(max-width:464px){
+    
+    .Lojas_Container > div .content{
+     width: 100%;
+    }
+}

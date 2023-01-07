@@ -1,0 +1,67 @@
+.PrimerioSaber_Container {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.PrimerioSaber_Container h6 {
+    font-size: 3.25em;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.PrimerioSaber_Container>p {
+    font-family: var(--font2);
+    font-size: 0.9375em;
+    max-width: 320px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.PrimerioSaber_Container>img {
+    width: 100%;
+    max-width: 422px;
+
+}
+
+.PrimerioSaber_Container>button {
+    background: #FFF7A9;
+    margin-bottom: 35px;
+}
+
+.PrimerioSaber_Container>button>div {
+    background: white;
+}
+
+.PrimerioSaber_Container>button input::placeholder {
+    color: black;
+    letter-spacing: 1px;
+}
+
+.PrimerioSaber_Container>button:hover {
+    background: #FFF7A9;
+    color: black;
+    border: 2px solid black;
+}
+
+.PrimerioSaber_Container>button:hover>div {
+    border-left: 2px solid black;
+}
+
+.PrimerioSaber_Container>button:hover>div img {
+    filter: none;
+}
+
+.PrimerioSaber_Container>button:hover>input {
+    color: black;
+}
+
+
+@media(max-width:546px) {
+    .PrimerioSaber_Container h6 {
+        font-size: 2.25em;
+    }
+}

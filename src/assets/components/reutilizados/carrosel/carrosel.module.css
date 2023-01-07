@@ -1,0 +1,99 @@
+.Carrosel_Container {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+
+.Carrosel_Container .carrosel {
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    min-height: 50px;
+
+}
+
+.Carrosel_Container .carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.Carrosel_Container .carrosel>* {
+    flex: none;
+    /*width do tamanho dos itens do carrosel tem que ser definidas nos itens em si*/
+}
+
+
+.Carrosel_Container .arrow {
+    width: 29px;
+    position: absolute;
+    top: 35%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.Carrosel_Container .arrow_Left {
+    left: 1.7%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+.Carrosel_Container .arrow_Right {
+    left: 98.3%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+
+@media(max-width:868px) {
+    .Carrosel_Container .arrow {
+        top: 85%;
+    }
+
+    .Carrosel_Container .arrow_Left {
+        left: 40%;
+    }
+
+    .Carrosel_Container .arrow_Right {
+        left: 60%;
+    }
+}
+
+@media(max-width:659px) {
+
+    /*Definir com base na width em que quer que as bolinhas apareçam*/
+    .Carrosel_Container .balls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+        max-height: 8px;
+        display: flex;
+        z-index: 10;
+        margin-top: 5%;
+       
+    }
+
+    .Carrosel_Container .balls>div {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: black;
+        margin: 0 8px;
+        z-index: 10;
+    }
+
+    @keyframes change_format {
+        to {
+            width: 8.35px;
+            height: 18.73px;
+            border-radius: 8px;
+            background: transparent;
+            margin: 0 8px;
+            margin-bottom: 8.7px;
+            border: 2px solid black;
+            transform: rotate(33deg);
+        }
+    }
+
+    .Carrosel_Container .balls .selected {
+        animation: change_format 0.3s forwards;
+    }
+}

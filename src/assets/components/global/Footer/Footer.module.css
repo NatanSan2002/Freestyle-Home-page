@@ -1,0 +1,212 @@
+.MainFooter>.mural {
+    padding: 50px 0;
+    background: white;
+}
+
+.MainFooter>.mural>img {
+    width: 168px;
+    margin-bottom: 50px;
+}
+
+.MainFooter>.mural>.containers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.MainFooter>.mural>.containers>div {
+    max-width: 129.78px;
+    margin-right: 5%;
+    margin-bottom: 18px;
+}
+
+.MainFooter h6 {
+    font-weight: 700;
+    font-size: 1.25em;
+    text-align: left;
+    margin: 0;
+}
+
+.MainFooter>.mural>.containers a {
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 15px;
+    transition: 0.3s;
+
+
+}
+
+.MainFooter>.mural>.containers a:hover {
+    color: #dc6565;
+    transition: 0.3s;
+}
+
+.MainFooter>.mural>.containers .gruop {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+    width: 65%;
+    margin: 0 0 0 auto;
+}
+
+.MainFooter>.mural>.containers .gruop>div>div>img {
+    margin-right: 20px;
+    margin-top: 19px;
+}
+
+.MainFooter>.mural>.containers .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainFooter>.mural>.containers button {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin: 4px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--mainfont);
+    min-width: 175px;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.MainFooter>.mural>.containers button:hover>* {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+.MainFooter>.mural>.containers button img {
+    margin-right: 10px;
+}
+
+.MainFooter .black_white img {
+
+    filter: grayscale(100%);
+
+}
+
+.MainFooter>.infos {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.MainFooter>.infos>div {
+    max-width: 400px
+}
+
+.MainFooter>.infos .flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 317px;
+}
+
+.MainFooter>.infos>div img {
+    max-width: 50px;
+    margin: 0 10px;
+    margin-bottom: 22px;
+
+}
+
+.MainFooter>.infos h6 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9%;
+}
+
+.MainFooter>.infos h6>img {
+    margin: 0 10px 0 0;
+    max-width: 30px;
+    width: auto;
+}
+
+.MainFooter>.infos p {
+    font-size: 10px;
+    font-family: var(--font2);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+
+.MainFooter .small_size  {
+    width: 260px;
+}
+
+.MainFooter>.infos .small_text {
+    font-weight: 400;
+    text-transform: none;
+}
+
+.MainFooter>.infos .end p {
+font-weight: 400;
+}
+
+@media(max-width:1031px) {
+    .MainFooter>.mural>.containers>div {
+        margin-bottom: 39px;
+    }
+}
+
+@media(max-width:970px) {
+    .MainFooter>.infos>div {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:782px) {
+    .MainFooter>.mural>.containers>div {
+        max-width: 120px;
+        margin-right: 11px;
+    }
+
+    .MainFooter>.mural>.containers .gruop {
+        width: auto;
+    }
+
+    .MainFooter>.mural>.containers .gruop>* {
+        margin-right: 11px;
+    }
+}
+
+@media(max-width:747px) {
+    .MainFooter>.infos>div {
+        max-width: 280px;
+    }
+}
+
+
+@media(max-width:519px) {
+    .MainFooter>.infos {
+        justify-content: center;
+    }
+
+    .MainFooter>.infos>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media(max-width:473px) {
+
+    .MainFooter>.mural>.containers button {
+        padding: 10px 2px;
+        min-width: auto;
+    }
+
+    .MainFooter>.mural>.containers .gruop {
+        flex-wrap: wrap
+    }
+}

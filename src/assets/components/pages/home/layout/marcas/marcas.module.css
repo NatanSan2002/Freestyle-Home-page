@@ -1,0 +1,16 @@
+.Marcas_Container .marca{
+min-height: 110px;
+width: 25%;
+display: flex;
+align-items: center;
+justify-content: center;
+} 
+
+.Marcas_Container .marca:hover{
+    background:#fff7a9;
+    cursor: pointer;
+}
+
+.Marcas_Container .marca > img {
+width: 54px;
+}

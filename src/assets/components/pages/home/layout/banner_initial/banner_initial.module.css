@@ -1,0 +1,141 @@
+.BannerIni_Container .carrosel{
+display: flex;
+overflow: auto;
+scroll-behavior: smooth;
+}
+
+ .BannerIni_Container .carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+  
+
+.BannerIni_Container .carrosel img{
+width: 100%;
+flex: none;
+}
+
+.BannerIni_Container > div{
+    position: relative;
+    margin-top: 2%;
+}
+
+.BannerIni_Container .arrow{
+position: absolute;
+top: 50%;
+width: 61px;
+z-index: 10;
+cursor: pointer;
+}
+
+.BannerIni_Container .arrow:hover{
+    filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(76deg) brightness(102%) contrast(108%);
+}
+
+.BannerIni_Container .left{
+transform:translate(-50%,-50%) rotate(90deg);
+left:3.5%;
+}
+
+.BannerIni_Container .right{
+    transform:translate(-50%,-50%) rotate(-90deg);
+    left:96.5%;
+    }
+
+.BannerIni_Container .balls{
+position: absolute;
+bottom:14px;
+left:50%;
+transform:translate(-50%,-50%);
+padding: 0 5px;
+max-height: 8px;
+display: flex;
+align-items: center;
+z-index: 10;
+}
+
+.BannerIni_Container .balls > div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    margin: 0 8px;
+}
+
+@keyframes change_format{
+to{
+    width: 8.35px;
+    height: 18.73px;
+    border-radius: 8px;
+    background: transparent;
+    margin: 0 8px;
+    margin-bottom: 8.7px;
+    border: 2px solid white;
+    transform: rotate(33deg);
+}
+}
+
+.BannerIni_Container .balls .selected{
+animation: change_format 0.3s forwards;
+}
+
+.BannerIni_Container .info{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.BannerIni_Container .info > p{
+padding: 15px 3%;
+width: 27.33333333333333%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.BannerIni_Container .info > .mid::after,.BannerIni_Container .info > .mid::before{
+content:"|";
+position: absolute;
+color:#C4C4C4;
+font-size: 18px;
+}
+
+.BannerIni_Container .info > .mid::after{
+    left:66.5%;
+}
+
+.BannerIni_Container .info > .mid::before{
+    right:66.5%;
+    }
+
+.BannerIni_Container .info > p img {
+margin-right:10px;
+}
+
+
+
+@media(max-width:750px){
+    .BannerIni_Container .info{
+    display: none;
+    }
+    
+}
+
+
+@media(max-width:672px){
+    .BannerIni_Container .arrow{
+        width: 32px;   
+        }
+}
+
+@media(max-width:488px){
+.BannerIni_Container .arrow, .BannerIni_Container .balls{
+    display: none;
+    }
+}
+    
+
